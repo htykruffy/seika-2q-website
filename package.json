@@ -6,6 +6,7 @@
   "author": "",
   "type": "module",
   "scripts": {
+    "build": "webpack --mode development",
     "webpack": "webpack --watch --mode development",
     "browser-sync": "browser-sync start --server --serveStatic dist --files dist/*.*",
     "dev": "npm-run-all -p webpack browser-sync"
