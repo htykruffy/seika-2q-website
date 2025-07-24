@@ -12,15 +12,16 @@
     "dev": "npm-run-all -p webpack browser-sync"
   },
   "dependencies": {
+    "animejs": "^4.0.2",
     "just-validate": "^4.3.0",
     "swiper": "^11.2.8"
   },
   "devDependencies": {
     "css-loader": "^7.1.2",
-    "eslint": "^9.29.0",
-    "eslint-config-prettier": "^10.1.5",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.8",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.6.1",
+    "prettier": "^3.6.2",
     "style-loader": "^4.0.0",
     "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1"
