@@ -5,14 +5,15 @@
   "license": "ISC",
   "author": "",
   "type": "module",
-  "scripts": {
-    "build": "webpack --mode development",
-    "webpack": "webpack --watch --mode development",
-    "browser-sync": "browser-sync start --server --serveStatic dist --files dist/*.*",
-    "dev": "npm-run-all -p webpack browser-sync"
-  },
+
+"scripts": {
+  "build": "webpack --mode development",
+  "webpack": "webpack --watch --mode development",
+  "browser-sync": "browser-sync start --server --serveStatic dist --files dist/*.*",
+  "dev": "npm-run-all -p webpack browser-sync"
+},
   "dependencies": {
-    "animejs": "^4.0.2",
+    "animejs": "^4.1.2",
     "just-validate": "^4.3.0",
     "swiper": "^11.2.8"
   },

@@ -1,13 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>バック・トゥ・ザ・フューチャー - Moviary</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+
+  </style>
 </head>
 <body>
-	<h1 id="main-title">こんにちは</h1>
-	<a href="company.html">企業情報</a>
+  <div class="header">
+    <h1><a href="#">Moviary</a></h1>
+    <div class="user-info">
+      <p>testuserさん</p>
+      <button>マイリスト</button>
+      <button>ログアウト</button>
+      <button onclick="return confirm('アカウントを削除してもよろしいですか？')">アカウントを削除</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="detail-content">
+      <img src="https://image.tmdb.org/t/p/w300/fNOH9f1aA7XRTzl1sAOx9iF553Q.jpg" alt="バック・トゥ・ザ・フューチャー" />
+      <div class="detail-info">
+        <h1 class="movie-title">バック・トゥ・ザ・フューチャー</h1>
+		<div class="derorian">
+			<img src="img/derorian.png">
+		</div>
+        <p><strong>公開日:</strong> 1985-07-03</p>
+        <p><strong>平均評価:</strong> 8.5</p>
+        <p><strong>監督:</strong> ロバート・ゼメキス</p>
+        <p><strong>概要:</strong> 高校生マーティ・マクフライは、親友の科学者ドク・ブラウンが開発したタイムマシンで1955年にタイムスリップしてしまう。</p>
+
+        <h3>マイリストに追加する</h3>
+        <div class="status-selection">
+          <input type="radio" id="watched" name="status" checked />
+          <label for="watched">視聴済み</label>
+          <input type="radio" id="to_watch" name="status" />
+          <label for="to_watch">視聴予定</label>
+          <input type="radio" id="delete" name="status" />
+          <label for="delete">削除</label>
+        </div>
+        <button>保存</button>
+      </div>
+    </div>
+
+    <div class="cast-section">
+      <h3>出演キャスト（上位5名）</h3>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/michael.webp" alt="マイケル・J・フォックス" />
+            <div class="cast-name">マイケル・J・フォックス</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/christopher.webp" alt="クリストファー・ロイド" />
+            <div class="cast-name">クリストファー・ロイド</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/lea.webp" alt="リー・トンプソン" />
+            <div class="cast-name">リー・トンプソン</div>
+          </div>
+		  <div class="swiper-slide">
+            <img src="img/thomas.webp" alt="トーマス・F・ウィルソン" />
+            <div class="cast-name">トーマス・F・ウィルソン</div>
+          </div>
+		  <div class="swiper-slide">
+            <img src="img/crispin.webp" alt="クリスピン・グローヴァー" />
+            <div class="cast-name">クリスピン・グローヴァー</div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+
+    <div class="review-section">
+      <h3>レビューを投稿</h3>
+      <form>
+        <label for="comment">コメント</label>
+        <textarea id="comment" rows="3" required></textarea>
+        <button>レビューを投稿</button>
+      </form>
+
+      <h3>レビュー一覧</h3>
+      <div class="review-list">
+        <div class="review-item">
+          <div class="review-username">testuser</div>
+          <div class="review-comment">タイムトラベル映画の金字塔！何度見ても最高！</div>
+        </div>
+        <div class="review-item">
+          <div class="review-username">moviefan123</div>
+          <div class="review-comment">ドクとマーティのコンビが最高です。</div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#">マイリストを見る</a>
+  </div>
+
+  <script src="main.js"></script>
+
 </body>
 </html>

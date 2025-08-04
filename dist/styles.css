@@ -1,3 +1,131 @@
 body {
-	color: red;
-}
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #f8f8f8;
+  }
+
+  .header {
+	background: #222;
+	color: white;
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+
+  .header a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.8rem;
+	font-weight: bold;
+  }
+
+  .user-info {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+  }
+
+  .container {
+	max-width: 1200px;
+	margin: 2rem auto;
+	background: white;
+	padding: 2rem 3rem;
+	border-radius: 8px;
+  }
+
+  .detail-content {
+	display: flex;
+	gap: 2rem;
+	align-items: flex-start;
+	margin-bottom: 2rem;
+  }
+
+  .detail-content img {
+	width: 300px;
+	border-radius: 8px;
+  }
+
+  .detail-info {
+	flex: 1;
+  }
+
+  .detail-info h1 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+  }
+
+  button {
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+  }
+
+  .status-selection {
+	margin-bottom: 1rem;
+  }
+
+  .cast-section {
+	margin-bottom: 2rem;
+  }
+
+  .cast-section h3 {
+	margin-bottom: 1rem;
+	font-size: 1.3rem;
+  }
+
+  .swiper {
+	width: 100%;
+	padding-bottom: 2rem;
+  }
+
+  .swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  }
+
+  .swiper-slide img {
+	width: 120px;
+	border-radius: 8px;
+	margin-bottom: 0.5rem;
+  }
+
+  .swiper-slide .cast-name {
+	font-size: 0.9rem;
+  }
+
+ 
+  
+
+  .review-section {
+	margin-bottom: 2rem;
+  }
+
+  .review-section h3 {
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+  }
+
+  .review-list {
+	margin-top: 1rem;
+  }
+
+  .review-item {
+	border-top: 1px solid #ccc;
+	padding: 0.5rem 0;
+  }
+
+  textarea {
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+  }
+
+  a {
+	color: #007bff;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 1rem;
+  }
