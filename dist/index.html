@@ -24,12 +24,16 @@
 
   <div class="container">
     <div class="detail-content">
-      <img src="https://image.tmdb.org/t/p/w300/fNOH9f1aA7XRTzl1sAOx9iF553Q.jpg" alt="バック・トゥ・ザ・フューチャー" />
+		<div class="poster">
+			<img src="img/BTTF_poster.webp" alt="バック・トゥ・ザ・フューチャー" />
+			<p style="color: red">↑CLICK THIS</font-size></p>
+		</div>
       <div class="detail-info">
         <h1 class="movie-title">バック・トゥ・ザ・フューチャー</h1>
-		<div class="derorian">
-			<img src="img/derorian.png">
+		<div class="delorean">
+			<img src="img/delorean.png">
 		</div>
+		<p style="color: red">↑CLICK THIS</font-size></p>
         <p><strong>公開日:</strong> 1985-07-03</p>
         <p><strong>平均評価:</strong> 8.5</p>
         <p><strong>監督:</strong> ロバート・ゼメキス</p>
@@ -106,6 +110,15 @@
   </div>
 
   <script src="main.js"></script>
+  <!-- <script>
+	let delorian = document.getElementsByClassName(".delorian")
+
+	function rotate(e){
+		if (delorian.x<0){
+			delorian.style.transform='rotateX(180deg)'
+		}
+	}
+  </script> -->
 
 </body>
 </html>

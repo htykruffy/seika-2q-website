@@ -6,7 +6,6 @@ new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 1,
-  centeredSlides: true,
   pagination: { el: '.swiper-pagination' },
   navigation: {
     nextEl: '.swiper-button-next',
@@ -34,6 +33,8 @@ animate(chars, {
 
 
 
+
+
 createScope({
   mediaQueries: {
     isSmall: '(max-width: 200px)',
@@ -48,13 +49,26 @@ createScope({
     utils.set('.derorian', { scale: .5 });
   }
     
-  animate('.derorian', {
-    x: isSmall ? 0 : ['-100vw', '100vw'],
-    y: isSmall ? ['-40vh', '40vh'] : 0,
-    loop: true,
-    alternate: true,
-    duration: reduceMotion ? 0 : isSmall ? 750 : 1250
+  function runAnimation() {
+  animate('.delorean', {
+    x: ['100vw', '0vw'],
+    duration: 1250
   });
+}
+
+// 画像クリックで実行
+document.querySelector('.delorean').addEventListener('click', runAnimation);
 
 });
 
+const posterEl = document.querySelector('.poster');
+let isZoomed = false;
+
+posterEl.addEventListener('click', () => {
+  animate(posterEl, {
+    scale: isZoomed ? 1 : 1.8,
+    duration: 500,
+    easing: 'easeInOutQuad'
+  });
+  isZoomed = !isZoomed;
+});
